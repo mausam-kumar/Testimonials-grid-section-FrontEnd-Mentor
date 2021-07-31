@@ -1,0 +1,149 @@
+body {
+  background-color: #070707;
+}
+
+.mainDiv {
+  max-width: 1440px;
+  margin: 5.5% auto;
+  height: 70vh;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[12];
+      grid-template-columns: repeat(12, 1fr);
+  -ms-grid-rows: (1fr)[12];
+      grid-template-rows: repeat(12, 1fr);
+  grid-gap: 20px;
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  font-weight: 500;
+  font-size: 13px;
+  padding: 1%;
+  border-radius: 10px;
+  background-color: #ecf2f8;
+}
+
+.mainDiv > div {
+  padding: 3%;
+}
+
+.mainDiv > div > p:nth-child(2) {
+  font-size: 20px;
+}
+
+.first {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 6;
+  grid-column: 1/7;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 6;
+  grid-row: 1/7;
+  border-radius: 5px;
+  background-color: #7541c8;
+  color: #cfcfcf;
+}
+
+.firstHead {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  line-height: 15px;
+}
+
+.firstHead > img {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+}
+
+.firstHead > div:nth-child(2) > p {
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.firstHead > div:nth-child(2) {
+  margin-left: 10%;
+}
+
+.firstHead > div:nth-child(2) p:nth-child(1) {
+  opacity: 70%;
+}
+
+.firstHead > div:nth-child(2) p:nth-child(2) {
+  opacity: 50%;
+}
+
+.second {
+  -ms-grid-column: 7;
+  -ms-grid-column-span: 3;
+  grid-column: 7/10;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 6;
+  grid-row: 1/7;
+  border-radius: 5px;
+  background-color: #48556a;
+  color: #cfcfcf;
+}
+
+.third {
+  grid-column: 10/-1;
+  grid-row: 1/-1;
+  border-radius: 5px;
+  background-color: white;
+  line-height: 25px;
+}
+
+.forth {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-column: 1/4;
+  grid-row: 7/-1;
+  border-radius: 5px;
+  background-color: white;
+}
+
+.fifth {
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 6;
+  grid-column: 4/10;
+  grid-row: 7/-1;
+  border-radius: 5px;
+  background-color: #19212e;
+  color: #cfcfcf;
+}
+
+@media (max-width: 1050px) {
+  .mainDiv {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: auto;
+    width: 70vw;
+    padding: 10%;
+  }
+  .firstHead {
+    width: 100%;
+  }
+}
+
+.attribution {
+  text-align: center;
+  color: white;
+  font-size: 30px;
+}
+
+.attribution a {
+  color: orangered;
+}
+/*# sourceMappingURL=style.css.map */
